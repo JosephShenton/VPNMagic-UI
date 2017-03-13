@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12100" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jailbreak circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lxl-mJ-i13">
+                                <rect key="frame" x="44" y="191" width="287" height="284"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="QiD-IF-SBB"/>
+                                    <constraint firstAttribute="width" constant="287" id="qNP-oS-SIv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu9-8g-8f6">
+                                <rect key="frame" x="84" y="313" width="206" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="01I-3H-KY1"/>
+                                    <constraint firstAttribute="width" constant="206" id="651-7e-d6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <state key="normal" title="Connect to VPN"/>
+                                <connections>
+                                    <action selector="initiateVPN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQT-RF-dAd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VPNMagic By Joe, Sem, Vince" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fg-EM-jCa">
+                                <rect key="frame" x="44" y="20" width="287" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="287" id="PbJ-NW-gbo"/>
+                                    <constraint firstAttribute="height" constant="32" id="enS-IL-4L6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.094117647058823528" green="0.10980392156862745" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fu9-8g-8f6" firstAttribute="centerY" secondItem="Lxl-mJ-i13" secondAttribute="centerY" id="NGk-b5-1dh"/>
+                            <constraint firstItem="1Fg-EM-jCa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ToK-r6-aTm"/>
+                            <constraint firstItem="Lxl-mJ-i13" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="amN-o5-iHU"/>
+                            <constraint firstItem="1Fg-EM-jCa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b7K-e0-l7Y"/>
+                            <constraint firstItem="Lxl-mJ-i13" firstAttribute="centerX" secondItem="1Fg-EM-jCa" secondAttribute="centerX" id="oI8-IB-haP"/>
+                            <constraint firstItem="Fu9-8g-8f6" firstAttribute="centerX" secondItem="1Fg-EM-jCa" secondAttribute="centerX" id="tLr-SY-4zC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vpnBtn" destination="Fu9-8g-8f6" id="OF8-0j-3gX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jailbreak circle.png" width="1024" height="1024"/>
+    </resources>
+    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
